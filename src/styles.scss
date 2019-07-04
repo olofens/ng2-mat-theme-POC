@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import './custom-theme';
+@import 'src/app/app-theme.scss';
+
+@mixin my-theme($theme) {
+    @include square-theme($theme);
+}
+
+@include angular-material-theme($my-theme);
+// @include square-theme($my-theme);
+@include my-theme($my-theme);
